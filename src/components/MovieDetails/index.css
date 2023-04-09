@@ -1,0 +1,327 @@
+.Movie-details-route-container {
+  background-color: #131313;
+  min-height: 100vh;
+  background-size: cover;
+  padding: 2px;
+  width: 100vw;
+}
+
+.List-Item {
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .List-Item {
+    margin-top: 80px;
+  }
+}
+
+.Each-movieDetail-image {
+  width: 94vw;
+  height: 80vh;
+  margin-left: 30px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .Each-movieDetail-image {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+.Movie-detail-title {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .Movie-detail-title {
+    font-size: 16px;
+  }
+}
+
+.Movie-hrs-adu-yea-mon-date-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+}
+
+.Movie-hrs-minutes {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 19px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.Adult-movie-details {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  padding: 3px;
+  border-radius: 7px;
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Rel-date-rel-mon-rel-year {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  margin-top: 23px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.Movie-overview-container {
+  width: 900px;
+}
+
+@media screen and (max-width: 767px) {
+  .Movie-overview-container {
+    display: none;
+  }
+}
+
+.OverView-list-card {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: -5px;
+  color: #ffffff;
+}
+
+.Movie-play-button {
+  width: 80px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.Movie-hrs-OView-container {
+  margin-top: -300px;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .Movie-hrs-OView-container {
+    margin-top: -150px;
+    margin-left: 20px;
+  }
+}
+
+.List-card {
+  margin-top: 140px;
+}
+
+.Movie-details-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Genres-cont-heading {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 50px;
+  color: #94a3b8;
+}
+
+@media screen and (max-width: 767px) {
+  .Genres-cont-heading {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: -25px;
+  }
+}
+
+.Movie-detail-unOrdered-list {
+  list-style-type: none;
+  margin-left: 10px;
+  margin-top: -15px;
+}
+
+.Audio-Movie-Details-Route {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -35px;
+  margin-left: 200px;
+  color: #94a3b8;
+}
+
+.Movies-un-ordered-list-spoken {
+  list-style-type: none;
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .Audio-Movie-Details-Route {
+    font-size: 15px;
+    margin-left: 120px;
+  }
+  .Movies-un-ordered-list-spoken {
+    margin-left: 140px;
+  }
+}
+
+.Movie-details-Rating {
+  margin-left: 240px;
+  margin-top: -55px;
+}
+
+@media screen and (max-width: 767px) {
+  .Movie-details-Rating {
+    margin-top: 255px;
+    margin-left: -250px;
+  }
+}
+
+.Movie-detail-budget-count {
+  margin-left: 150px;
+  margin-top: -55px;
+}
+
+@media screen and (max-width: 767px) {
+  .Movie-detail-budget-count {
+    margin-top: 255px;
+    margin-right: 400px;
+  }
+}
+
+.MovieDetail-Rating {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 25px;
+  color: #94a3b8;
+}
+
+.Movie-Vote-Count {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.Movie-Rat-Avg {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 25px;
+  color: #94a3b8;
+}
+
+.Voting-Average {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.Movie-Budget-heading-list {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 25px;
+  color: #94a3b8;
+}
+
+@media screen and (max-width: 767px) {
+  .Movie-Budget-heading-list {
+    margin-left: -120px;
+  }
+}
+
+.Movie-Budget {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .Movie-Budget {
+    margin-left: -120px;
+  }
+}
+
+.Movie-Release-date {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+@media screen and (max-width: 767px) {
+  .Movie-Release-date {
+    margin-left: -120px;
+  }
+}
+
+.Movie-release-date-list {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .Movie-release-date-list {
+    margin-left: -120px;
+  }
+}
+
+.Movie-detail-budget-count {
+  margin-left: 240px;
+}
+
+.Movie-detail-similar-movies {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.More-Movies-like {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 60px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .More-Movies-like {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}

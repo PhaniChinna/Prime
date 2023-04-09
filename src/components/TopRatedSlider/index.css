@@ -1,0 +1,24 @@
+.Top-rated-slide-images {
+  width: 230px;
+  margin-left: 20px;
+  margin-right: -90px;
+  right: -90px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.Top-Rated-slider-width {
+  margin-left: 90px;
+  margin-right: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .Top-rated-slide-images {
+    width: 85px;
+    height: 100px;
+  }
+  .Top-Rated-slider-width {
+    margin-right: 60px;
+    margin-left: 10px;
+  }
+}

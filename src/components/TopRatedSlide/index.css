@@ -1,0 +1,55 @@
+.Render-un-ordered-list {
+  list-style-type: none;
+}
+
+.Render-loader-topRated {
+  margin-top: 10px;
+}
+
+.Render {
+  background-color: #131313;
+  width: 900px;
+  margin-left: 150px;
+  height: 16vh;
+  display: flex;
+  padding: 4px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .Render {
+    width: 250px;
+    margin-left: 50px;
+  }
+}
+
+.Render-failure-view-detail {
+  background-color: #131313;
+  padding: 3px;
+  width: 900px;
+  margin-left: 190px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .Render-failure-view-detail {
+    width: 250px;
+    margin-left: 50px;
+  }
+}
+
+.Paragraph_list-something-list {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}

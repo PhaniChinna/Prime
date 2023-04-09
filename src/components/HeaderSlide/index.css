@@ -1,0 +1,49 @@
+.HomeTreOrg-container {
+  background-color: #131313;
+  height: 80px;
+  width: 100vw;
+  padding: 2px;
+}
+
+.Home-Tr-Or-image {
+  margin-left: 40px;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.Home-tre-org-un-Ordered {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.Home-tre-org-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 100px;
+  margin-top: -50px;
+}
+
+.Home-heading-home-Home {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 26px;
+  cursor: pointer;
+  color: #f8fafc;
+}
+
+@media screen and (max-width: 767px) {
+  .HomeTreOrg-container {
+    width: 100vw;
+  }
+  .Home-tre-org-card-container {
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+}

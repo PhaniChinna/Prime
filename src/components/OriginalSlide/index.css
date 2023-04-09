@@ -1,0 +1,70 @@
+.Original-slider {
+  list-style-type: none;
+}
+
+.Render-loader-list-cars {
+  background-color: #131313;
+  width: 900px;
+  margin-top: 40px;
+  margin-left: 180px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.Tail-rounding {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .Render-loader-list-cars {
+    width: 250px;
+    margin-left: 60px;
+  }
+}
+
+.Render_loader-v {
+  background-color: #131313;
+  width: 900px;
+  margin-top: 40px;
+  margin-left: 180px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .Render_loader-v {
+    width: 250px;
+    margin-left: 60px;
+  }
+}
+
+.SomeThing-went-wrong {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .SomeThing-went-wrong {
+    font-size: 12px;
+  }
+}
+
+.Render-button-list-car {
+  width: 90px;
+  height: 30px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

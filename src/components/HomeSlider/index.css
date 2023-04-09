@@ -1,0 +1,369 @@
+.Home-card-container {
+  background-color: #0d0d0d;
+  width: 100vw;
+  height: 100vh;
+  margin-right: 90px;
+  background-size: cover;
+  padding: 2px;
+  overflow-y: hidden;
+}
+
+.j {
+  color: white;
+}
+
+.Home-list-card {
+  display: flex;
+  margin-top: 50px;
+}
+
+.Home-list-un-ordered-list {
+  list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .Home-card-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.Render-loader-view {
+  display: flex;
+  margin-top: 90px;
+}
+
+.Loader {
+  display: flex;
+  margin-left: 550px;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .Loader {
+    margin-top: 27px;
+    margin-left: 180px;
+  }
+}
+
+.Render-failure-view {
+  margin-top: 60px;
+}
+
+.Danger-view {
+  margin-left: 550px;
+}
+
+.Something-went-wrong {
+  margin-left: 45;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 480px;
+  color: #ffffff;
+}
+
+.render-failure-button {
+  width: 90px;
+  height: 30px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 540px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
+
+.Trending-list-container {
+  background-color: #0d0d0d;
+  height: 100vh;
+  width: 100vw;
+  padding: 2px;
+}
+
+.Heading-Trending {
+  margin-top: 50px;
+  margin-left: 90px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.Header-home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Header-Bs-ox-Arrow {
+  margin-top: 55px;
+  color: white;
+  cursor: pointer;
+  margin-right: 140px;
+}
+
+@media screen and (max-width: 767px) {
+  .Home-card-container {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Heading-Trending {
+    margin-left: 30px;
+    font-size: 15px;
+  }
+  .Header-Bs-ox-Arrow {
+    margin-right: 60px;
+  }
+}
+
+.Trending-top-rated-container {
+  background-color: #0d0d0d;
+  width: 100vw;
+  margin-top: -140px;
+  height: 100vh;
+  padding: 2px;
+}
+
+.Top-rated-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Top-rared-hading {
+  margin-left: 90px;
+  margin-top: -10px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.Header-Bs-ox-Arrow-list {
+  margin-top: -50px;
+  color: white;
+  cursor: pointer;
+  margin-right: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .Top-rared-hading {
+    font-size: 16px;
+    margin-left: 29px;
+    margin-top: -10px;
+  }
+  .Header-Bs-ox-Arrow-list {
+    margin-top: -90px;
+    margin-right: 60px;
+  }
+  .Top-rated-container {
+    margin-top: -150px;
+  }
+}
+
+.Originals-movies-container {
+  background-color: #0d0d0d;
+  width: 100vw;
+  margin-top: -140px;
+  height: 100vh;
+  padding: 2px;
+}
+
+.Originals-container {
+  margin-top: -140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Originals-route-Originals {
+  margin-left: 90px;
+  margin-top: -10px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.Header-Bs-ox-Arrow-list-original {
+  color: white;
+  cursor: pointer;
+  margin-right: 140px;
+}
+
+@media screen and (max-width: 767px) {
+  .Originals-container {
+    margin-top: -390px;
+  }
+  .Originals-route-Originals {
+    font-size: 16px;
+    margin-left: 29px;
+    margin-top: -10px;
+  }
+  .Header-Bs-ox-Arrow-list-original {
+    margin-top: -30px;
+    margin-right: 60px;
+  }
+}
+
+.Render-loader-view {
+  width: 900px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .Render-loader-view {
+    width: 330px;
+    margin-left: 10px;
+    height: 140px;
+  }
+}
+
+.Render-failure-view-button {
+  background-color: #131313;
+  margin-top: 90px;
+  width: 900px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.Something-went-wrong-para {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.render-failure-button-list {
+  width: 90px;
+  height: 30px;
+  margin-bottom: 20px;
+  outline: none;
+  margin-right: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .Render-failure-view-button {
+    width: 320px;
+    margin-left: 10px;
+  }
+}
+
+.Home-route-card-container {
+  background-color: #131313;
+  min-height: 100vh;
+  padding: 2px;
+}
+
+.Trending-list-container-Route {
+  margin-top: 170px;
+}
+
+@media screen and (max-width: 767px) {
+  .Trending-list-container-Route {
+    margin-top: 20px;
+  }
+  .Originals-movies-container-Route {
+    margin-top: 400px;
+  }
+  .Trending-top-rated-container-Route {
+    margin-top: 300px;
+  }
+  .Home-route-card-container {
+    width: 100vw;
+  }
+}
+
+.Heading-Trending-Route {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 120px;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .Heading-Trending-Route {
+    margin-left: 50px;
+    font-size: 17px;
+    margin-top: 50px;
+  }
+}
+
+.Trending-top-rated-container-Route {
+  margin-top: 60px;
+}
+
+.Originals-movies-container-Route {
+  margin-top: 180px;
+}
+
+@media screen and (max-width: 767px) {
+  .Trending-top-rated-container-Route {
+    margin-top: 190px;
+  }
+  .Originals-movies-container-Route {
+    margin-top: 450px;
+  }
+}
+
+.Originals-route-Originals-Route {
+  margin-left: 120px;
+  margin-top: -10px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .Originals-route-Originals-Route {
+    margin-left: 50px;
+    margin-top: -6px;
+    font-size: 20px;
+  }
+}
+
+.Top-rared-hading-Route {
+  margin-left: 120px;
+  margin-top: -10px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .Top-rared-hading-Route {
+    margin-left: 50px;
+    margin-top: -6px;
+    font-size: 20px;
+  }
+}

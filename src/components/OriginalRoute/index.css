@@ -1,0 +1,62 @@
+.Original-return-container {
+  background-color: #131313;
+  min-height: 100px;
+  padding: 2px;
+  width: 101vw;
+  margin-left: -10px;
+  margin-right: -2px;
+}
+
+.Original-movies-un-ordered-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Render-loader-view {
+  background-color: #131313;
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 567px) {
+  .Render-loader-view {
+    height: 60vh;
+  }
+}
+
+.Render-failure-view {
+  display: flex;
+  background-color: #131313;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Render-trending-something-para {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.renderButton-Trending {
+  width: 90px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Op {
+  width: 100vw;
+}

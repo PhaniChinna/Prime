@@ -1,0 +1,24 @@
+.Trending-slider-image {
+  width: 230px;
+  margin-left: 20px;
+  margin-right: -90px;
+  right: -90px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.Trending-slider-width {
+  margin-left: 90px;
+  margin-right: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .Trending-slider-image {
+    width: 85px;
+    height: 100px;
+  }
+  .Trending-slider-width {
+    margin-right: 70px;
+    margin-left: 10px;
+  }
+}

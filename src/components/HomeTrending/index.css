@@ -1,0 +1,71 @@
+.Trending-Home-list {
+  width: 94vw;
+  height: 80vh;
+  border-radius: 10px;
+  margin-top: 14px;
+  margin-left: -10px;
+}
+
+.Home-div-container {
+  width: 400px;
+  margin-top: -390px;
+  margin-left: 25px;
+}
+
+.Trending-Home-title {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.Trending-Home-OverView {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: -20px;
+}
+
+.Home-button {
+  width: 90px;
+  height: 33px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: black;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .Trending-Home-OverView {
+    display: none;
+  }
+  .Home-div-container {
+    margin-top: -120px;
+    width: 200px;
+  }
+  .Trending-Home-title {
+    font-size: 15px;
+  }
+  .Trending-Home-list {
+    width: 300px;
+    height: 140px;
+    margin-top: 60px;
+    margin-left: -15px;
+  }
+
+  .Home-button {
+    width: 70px;
+    height: 27px;
+    font-size: 15px;
+  }
+}

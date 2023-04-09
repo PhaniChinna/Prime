@@ -1,0 +1,158 @@
+.Login-page-container {
+  background-image: url('https://res.cloudinary.com/dkwof0tuj/image/upload/v1680071364/netfilx_1_ivb9o8.png');
+  height: 100vh;
+  background-size: cover;
+  padding: 2px;
+}
+
+.Login-Page-Movies-card {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.Login-opacity-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+.Login-container-page {
+  background-color: #0c0b10;
+  width: 350px;
+  min-height: 100px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.Login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login-header-container {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.label-username {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: -170px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.Input-label {
+  background: #333333;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  padding: 8px;
+  margin-top: 5px;
+  height: 30px;
+  font-family: 'HK Grotesk';
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.label-password {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: -170px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.Password-Input {
+  background: #333333;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  padding: 8px;
+  margin-top: 5px;
+  height: 30px;
+  font-family: 'HK Grotesk';
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.Login-button {
+  height: 30px;
+  outline: none;
+  border: none;
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #e50914;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #f8fafc;
+}
+
+.Login-button-back-color-red {
+  height: 30px;
+  outline: none;
+  border: none;
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #ab4141;
+  border-radius: 7px;
+  color: #f8fafc;
+}
+
+.Render-login-container {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+  .Image-website-logo {
+    width: 100px;
+    height: 40px;
+    margin-left: -60px;
+  }
+  .Login-container-page {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .Login-container-page {
+    margin-top: 30px;
+  }
+  .Login-opacity-container {
+    margin-top: 120px;
+  }
+}

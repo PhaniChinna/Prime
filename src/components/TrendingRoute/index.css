@@ -1,0 +1,59 @@
+.Trending-list-render-return-container {
+  background-color: #131313;
+  min-height: 100px;
+  padding: 2px;
+  width: 101vw;
+  margin-left: -10px;
+  margin-right: -2px;
+}
+
+.Trending-movies-un-ordered-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.render-loader-Trending {
+  background-color: #131313;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Render-failure-view-Trending {
+  background-color: #131313;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Render-trending-paragraph {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.Render-button-Trending {
+  height: 30px;
+  width: 90px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.kak {
+  width: 100vw;
+}
+
+.Jl {
+  width: 100vw;
+}

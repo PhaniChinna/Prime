@@ -1,0 +1,29 @@
+.Trending-Poster-list {
+  width: 350px;
+  height: 350px;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 7px;
+}
+
+.Trending-list-paragraph {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 40px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .Trending-Poster-list {
+    width: 120px;
+    height: 120px;
+  }
+  .Trending-list-paragraph {
+    font-size: 5px;
+    margin-left: 22px;
+  }
+}

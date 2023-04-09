@@ -1,0 +1,91 @@
+.Trending-movie-slide {
+  list-style-type: none;
+}
+
+.List-Loader-container {
+  background-color: #131313;
+  width: 900px;
+  margin-left: 150px;
+  height: 16vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.List-Loader {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .List-Loader-container {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 320px;
+  }
+}
+
+.List-render-failure {
+  background-color: #131313;
+  width: 900px;
+  height: 30vh;
+  margin-left: 190px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.List-Render-danger-image {
+  margin-top: 20px;
+}
+
+.List-render {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.List-button-container {
+  width: 90px;
+  height: 30px;
+  font-family: 'HK Grotesk';
+  border-radius: 1px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Render-failure-view {
+  background-color: #131313;
+  width: 900px;
+  height: 30vh;
+  margin-left: 190px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.Paragraph_list-something {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.Render-button-try {
+  width: 90px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
