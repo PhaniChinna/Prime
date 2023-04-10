@@ -325,3 +325,42 @@
     margin-left: 20px;
   }
 }
+
+.render-Loader-view-movie-details {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Loader-movie-details {
+  margin-top: 70px;
+}
+
+.Render-failure-movie-details {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Movie-details-Failure-logo {
+  margin-top: 70px;
+}
+
+.Movie-details-paragraph {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.Render-button-failure {
+  width: 90px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

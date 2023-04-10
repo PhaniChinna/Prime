@@ -25,7 +25,7 @@ class AccountRoute extends Component {
           <h1 className="Account-heading">Account</h1>
           <hr className="Account-line-hr" />
           <div className="Account-Member-ship">
-            <p className="Member-ship-check">Membership</p>
+            <p className="Member-ship-check">Member ship</p>
             <div className="Account-form-column">
               <p className="Member-username">rahul@gmail.com</p>
               <p className="Member-Password">Password:*******</p>

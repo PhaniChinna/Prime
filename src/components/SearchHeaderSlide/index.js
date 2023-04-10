@@ -9,8 +9,11 @@ const HeaderSearch = () => (
         <img
           src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679643790/Group_7399_bzo5kj.png"
           className="Header-search"
-          alt="Logo "
+          alt="website logo "
         />
+        <ul className="Li">
+          <li>Home</li>
+        </ul>
       </Link>
     </div>
   </>

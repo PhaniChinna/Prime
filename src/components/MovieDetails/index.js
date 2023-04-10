@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 
 import HeaderPage from '../HeaderSlide'
@@ -13,12 +14,20 @@ import ContactUs from '../ContactUs'
 
 import './index.css'
 
+const apiStatusConstant = {
+  initial: 'INITIAL',
+  inProgress: 'INPROGRESS',
+  success: 'SUCCESS',
+  failure: 'FAILURE',
+}
+
 class MovieDetails extends Component {
   state = {
     movieDetailsList: {},
     genreDetailList: [],
     SpokenLanguage: [],
     SimilarDataList: [],
+    apiStatus: apiStatusConstant.initial,
   }
 
   componentDidMount() {
@@ -38,7 +47,14 @@ class MovieDetails extends Component {
     voteCount: data.vote_count,
   })
 
+  onClickButton = () => {
+    this.getMovieDetailsList()
+  }
+
   getMovieDetailsList = async () => {
+    this.setState({
+      apiStatus: apiStatusConstant.inProgress,
+    })
     const jwtToken = Cookies.get('jwt_token')
     const {match} = this.props
     const {params} = match
@@ -76,9 +92,45 @@ class MovieDetails extends Component {
         genreDetailList: GenresDetailsList,
         SpokenLanguage: SpokenLanguageDetails,
         SimilarDataList: SimilarDetailsList,
+        apiStatus: apiStatusConstant.success,
+      })
+    } else {
+      this.setState({
+        apiStatus: apiStatusConstant.failure,
       })
     }
   }
+
+  renderLoaderView = () => (
+    <div className="render-Loader-view-movie-details" testid="loader">
+      <Loader
+        className="Loader-movie-details"
+        type="TailSpin"
+        color="#D81F26"
+        height={50}
+        width={50}
+      />
+    </div>
+  )
+
+  renderFailureView = () => (
+    <div className="Render-failure-movie-details">
+      <img
+        src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
+        alt="failure view"
+      />
+      <p className="Movie-details-paragraph">
+        Something went wrong. Please try again
+      </p>
+      <button
+        className="Render-button-failure "
+        type="button"
+        onClick={this.onClickButton}
+      >
+        Try Again
+      </button>
+    </div>
+  )
 
   renderSuccessView = () => {
     const {
@@ -114,10 +166,14 @@ class MovieDetails extends Component {
           className="Each-movieDetail-image"
         />
         <div className="Movie-hrs-OView-container">
-          <p className="Movie-detail-title">{title}</p>
+          <h1 value="title" className="Movie-detail-title">
+            {title}
+          </h1>
           <div className="Movie-hrs-adu-yea-mon-date-container">
             <p className="Movie-hrs-minutes">{`${hours}h ${minutes}m`}</p>
-            <p className="Adult-movie-details">{adult ? 'A' : 'U / A'}</p>
+            <p value="adult" className="Adult-movie-details">
+              {adult ? 'A' : 'U / A'}
+            </p>
             <p className="Rel-date-rel-mon-rel-year">{`${releaseDateDay}-${releaseDateMonth}-${releaseDateYear}`}</p>
           </div>
           <div className="Movie-overview-container">
@@ -169,12 +225,27 @@ class MovieDetails extends Component {
     )
   }
 
+  renderTotalSuccessView = () => {
+    const {apiStatus} = this.state
+
+    switch (apiStatus) {
+      case apiStatusConstant.success:
+        return this.renderSuccessView()
+      case apiStatusConstant.failure:
+        return this.renderFailureView()
+      case apiStatusConstant.inProgress:
+        return this.renderLoaderView()
+      default:
+        return null
+    }
+  }
+
   render() {
     return (
       <>
         <HeaderPage />
         <div className="Movie-details-route-container">
-          {this.renderSuccessView()}
+          {this.renderTotalSuccessView()}
         </div>
         <div>
           <ContactUs />

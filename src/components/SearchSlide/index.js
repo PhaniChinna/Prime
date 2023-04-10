@@ -73,17 +73,18 @@ class SearchRoute extends Component {
   }
 
   renderSuccessDataLIst = () => {
-    const {searchMoviesData, searchInput} = this.state
+    const {searchMoviesData, searchInput, id} = this.state
     const jobsDisplay = searchMoviesData.length > 0
     return jobsDisplay ? (
       <div className="Search-screen-container">
         <ul className="Search-input-unOrdered-list">
           {searchMoviesData.map(each => (
-            <li>
-              <Link to={`/movies/${each.id}`} key={each.id}>
+            <li key={each.id}>
+              <Link to={`/movies/${id}`} key={each.id}>
                 <img
                   src={each.posterPath}
                   alt={each.title}
+                  key="title"
                   className="search-input-search"
                 />
               </Link>
@@ -96,10 +97,10 @@ class SearchRoute extends Component {
         <img
           src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1680503281/Group_7394_d3uobr.png"
           className="search-image-cont"
-          alt="Ohno"
+          alt="no movies"
         />
         <p className="Search-did-not-matches">
-          You are searched {searchInput} did not find any matches
+          Your search for {searchInput} did not find any matches.
         </p>
       </div>
     )
@@ -122,10 +123,10 @@ class SearchRoute extends Component {
       <img
         src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
         className="Alert-search-input"
-        alt="alert"
+        alt="failure view"
       />
       <p className="Search-input-something">
-        Something went wrong please try again
+        Something went wrong. Please try again
       </p>
       <button className="Search-button-try-again" type="button">
         Try Again

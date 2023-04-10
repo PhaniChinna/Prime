@@ -12,6 +12,7 @@ const SimilarPoster = props => {
             <img
               src={each.posterPath}
               alt={each.title}
+              key="title"
               className="Each-similar-movies-list"
             />
           </Link>

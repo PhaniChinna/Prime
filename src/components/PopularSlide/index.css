@@ -16,3 +16,41 @@
 .akj {
   width: 100vw;
 }
+
+.Popular-loader-view {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Popular-Loader-view {
+  margin-top: 60px;
+}
+
+.Render-failure-popular {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Popular-alert-Triangle {
+  margin-top: 30px;
+}
+
+.Popular-render-pa {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.Render-failure-button-popular {
+  width: 90px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}

@@ -55,7 +55,13 @@ class TopRatedMovies extends Component {
   }
 
   onClickTryButton = () => {
-    this.getTopRatedMoviesList()
+    const {TopRatedMoviesList} = this.state
+    this.setState(
+      {
+        TopRatedMoviesList,
+      },
+      this.getTopRatedMoviesList(),
+    )
   }
 
   renderSuccessView = () => {
@@ -73,7 +79,7 @@ class TopRatedMovies extends Component {
     <div className="Render-failure-view-detail">
       <img
         src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
-        alt="danger"
+        alt="failure view"
       />
       <p className="Paragraph_list-something-list">
         Something Went Wrong Please try again
@@ -81,7 +87,7 @@ class TopRatedMovies extends Component {
       <button
         className="Render-button-try"
         type="button"
-        onClick={this.onClickTryButton}
+        onRetry={this.onClickTryButton}
       >
         Try Again
       </button>
@@ -89,7 +95,7 @@ class TopRatedMovies extends Component {
   )
 
   renderLoaderView = () => (
-    <div className="Render-loader-topRated-list">
+    <div className="Render-loader-topRated-list" testid="loader">
       <Loader
         className="Render"
         type="TailSpin"

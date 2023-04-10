@@ -73,7 +73,7 @@ class OriginalSlider extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="Render-loader-list-cars">
+    <div className="Render-loader-list-cars" testid="loader">
       <Loader
         type="TailSpin"
         color="#D81F26"
@@ -88,7 +88,7 @@ class OriginalSlider extends Component {
     <div className="Render_loader-v">
       <img
         src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
-        alt="danger"
+        alt="failure view"
       />
       <p className="SomeThing-went-wrong">
         something went wrong please try again

@@ -63,7 +63,7 @@ class OriginalRoute extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="Render-loader-view">
+    <div className="Render-loader-view" testid="loader">
       <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
     </div>
   )
@@ -72,7 +72,7 @@ class OriginalRoute extends Component {
     <div className="Render-failure-view">
       <img
         src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
-        alt="danger"
+        alt="failure view"
       />
       <p className="Render-trending-something-para">
         Something went wrong Please try again
@@ -120,6 +120,7 @@ class OriginalRoute extends Component {
       <>
         <HomTreTopOrg />
         <div className="Original-return-container">
+          <h1 className="Originals-Route-list-crd">Originals</h1>
           {this.renderOriginalSuccess()}
         </div>
         <div className="Op">

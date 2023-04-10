@@ -11,6 +11,7 @@ const TopRatedPoster = props => {
             <img
               src={each.posterPath}
               alt={each.title}
+              key="title"
               className="TopRated-Poster-list"
             />
           </Link>

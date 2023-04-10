@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+
 import Slider from 'react-slick'
 
 import 'slick-carousel/slick/slick.css'
@@ -47,7 +48,7 @@ const TrendingSlides = props => {
               <img
                 src={each.posterPath}
                 alt={each.title}
-                key={each.id}
+                key="title"
                 className="Trending-slider-image"
               />
             </Link>

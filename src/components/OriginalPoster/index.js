@@ -11,6 +11,7 @@ const OriginalPoster = props => {
             <img
               src={each.posterPath}
               alt={each.title}
+              key="title"
               className="Original-Poster-list"
             />
           </Link>

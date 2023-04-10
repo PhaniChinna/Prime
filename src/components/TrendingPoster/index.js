@@ -12,6 +12,7 @@ const TrendingPoster = props => {
             <img
               src={each.posterPath}
               alt={each.title}
+              key="title"
               className="Trending-Poster-list"
             />
           </Link>

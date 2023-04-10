@@ -156,3 +156,14 @@
     margin-top: 120px;
   }
 }
+
+.Error-login-msg {
+  color: Red;
+  margin-top: 5px;
+  margin-left: -30px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #dc2626;
+}

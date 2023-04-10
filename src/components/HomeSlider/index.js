@@ -74,7 +74,7 @@ class HomePage extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="Render-loader-view">
+    <div className="Render-loader-view" testid="loader">
       <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
     </div>
   )
@@ -83,7 +83,7 @@ class HomePage extends Component {
     <div className="Render-failure-view-button">
       <img
         src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
-        alt="danger"
+        alt="failure view"
       />
       <p className="Something-went-wrong-para">
         Something went wrong please try again
@@ -136,7 +136,7 @@ class HomePage extends Component {
           </div>
           <div className="Trending-list-container-Route">
             <div className="Header-home-container">
-              <h1 className="Heading-Trending-Route">Trending</h1>
+              <h1 className="Heading-Trending-Route">Trending Now</h1>
               <Link to="/trending">
                 <BsBoxArrowInUpRight className="Header-Bs-ox-Arrow" />
               </Link>

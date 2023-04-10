@@ -70,12 +70,12 @@ class TrendingSlider extends Component {
   }
 
   renderTrendingSuccessView = () => {
-    const {TrendingMovies, id} = this.state
+    const {TrendingMovies} = this.state
     return (
       <>
         <div>
           <ul className="Trending-movie-slide">
-            <TrendingSlides TrendingSlideMovie={TrendingMovies} key={id} />
+            <TrendingSlides TrendingSlideMovie={TrendingMovies} key="name" />
           </ul>
         </div>
       </>
@@ -83,7 +83,7 @@ class TrendingSlider extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="List-Loader-container">
+    <div className="List-Loader-container" testid="loader">
       <Loader
         className="List-Loader"
         type="TailSpin"
@@ -102,14 +102,14 @@ class TrendingSlider extends Component {
     <div className="List-render-failure">
       <img
         src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
-        alt="Danger"
+        alt="failure view"
         className="List-Render-danger-image"
       />
-      <p className="List-render">Something went wrong please try again</p>
+      <p className="List-render">Something went wrong. Please try again</p>
       <button
         className="List-button-container"
         type="button"
-        onClick={this.onClickButtonRender}
+        onRetry={this.onClickButtonRender}
       >
         Try Again
       </button>

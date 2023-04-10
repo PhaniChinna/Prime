@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {HiOutlineSearch} from 'react-icons/hi'
 
 import {Link} from 'react-router-dom'
 
@@ -8,11 +9,13 @@ class HeaderPage extends Component {
   render() {
     return (
       <div className="HomeTreOrg-container">
-        <img
-          src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679652587/Group_7399_2_x2dqea.png"
-          className="Home-Tr-Or-image"
-          alt="Logo"
-        />
+        <Link to="/">
+          <img
+            src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679652587/Group_7399_2_x2dqea.png"
+            className="Home-Tr-Or-image"
+            alt="website logo"
+          />
+        </Link>
         <div className="Home-tre-org-card-container">
           <ul className="Home-tre-org-un-Ordered">
             <li className="Home-heading-home-Home">
@@ -30,11 +33,19 @@ class HeaderPage extends Component {
                 Search
               </Link>
             </li>
+            <button className="LOO" type="button" testid="searchButton">
+              <HiOutlineSearch className="mk" />
+            </button>
             <li className="Home-heading-home-Home">
               <Link className="Home-tre-org-link" to="/account">
                 Account
               </Link>
             </li>
+            <img
+              src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679648297/Avatar_b1rb5n.png"
+              alt="profile"
+              className="l"
+            />
           </ul>
         </div>
       </div>

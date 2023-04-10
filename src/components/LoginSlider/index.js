@@ -8,6 +8,8 @@ class LoginPage extends Component {
   state = {
     username: '',
     password: '',
+    showError: false,
+    errorMsg: '',
   }
 
   onChangeUser = event => {
@@ -26,6 +28,13 @@ class LoginPage extends Component {
     const {history} = this.props
     Cookies.set('jwt_token', jwtToken, {expires: 30})
     history.replace('/')
+  }
+
+  onSubmitFailure = errorMsg => {
+    this.setState({
+      showError: true,
+      errorMsg,
+    })
   }
 
   onSubmitSuccess = async event => {
@@ -56,14 +65,14 @@ class LoginPage extends Component {
 
   renderLoginButtonBack = () => (
     <div className="Render-login-container">
-      <button type="button" className="Login-button-back-color-red">
+      <button type="submit" className="Login-button-back-color-red">
         Login
       </button>
     </div>
   )
 
   render() {
-    const {username, password} = this.state
+    const {username, password, showError, errorMsg} = this.state
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
@@ -113,6 +122,7 @@ class LoginPage extends Component {
                 id="Password"
                 placeholder="Password"
               />
+              {showError && <p className="Error-login-msg">*{errorMsg}</p>}
               {PasswordLength
                 ? this.renderLoinButton()
                 : this.renderLoginButtonBack()}

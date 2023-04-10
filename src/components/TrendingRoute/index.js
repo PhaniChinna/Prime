@@ -76,7 +76,7 @@ class TrendingRoute extends Component {
   }
 
   renderLoaderView = () => (
-    <div className="render-loader-Trending">
+    <div className="render-loader-Trending" testid="loader">
       <Loader type="TailSpin" color="#D81F26" height="50" width="50" />
     </div>
   )
@@ -85,7 +85,7 @@ class TrendingRoute extends Component {
     <div className="Render-failure-view-Trending">
       <img
         src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679902480/alert-triangle_hemaln.png"
-        alt="Danger"
+        alt="failure view"
       />
       <p className="Render-trending-paragraph">
         Something went wrong please try again
@@ -120,6 +120,7 @@ class TrendingRoute extends Component {
       <>
         <HomTreTopOrg />
         <div className="Trending-list-render-return-container">
+          <h1 className="Render-Trending">Trending</h1>
           {this.renderTrendingSuccessView()}
         </div>
         <div className="Jl">

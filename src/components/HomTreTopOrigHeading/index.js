@@ -12,7 +12,7 @@ class HomTreTopOrg extends Component {
           <img
             src="https://res.cloudinary.com/dkwof0tuj/image/upload/v1679652587/Group_7399_2_x2dqea.png"
             className="Home-Tr-Or-image"
-            alt="Logo"
+            alt="website logo"
           />
         </Link>
         <div className="Home-tre-org-card-container">

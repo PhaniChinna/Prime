@@ -57,3 +57,14 @@
 .Jl {
   width: 100vw;
 }
+
+.Render-Trending {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  margin-left: 70px;
+  margin-top: 40px;
+  color: #ffffff;
+}
